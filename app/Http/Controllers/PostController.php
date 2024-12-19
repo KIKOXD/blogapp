@@ -36,20 +36,6 @@ class PostController extends Controller
             // Hapus "public" kedua dari path
             $path = $request->file('image')->store('images', 'public');
         }
-    
-        // if ($request->hasFile('image')) {
-        //     $file = $request->file('image');
-        //     $filename = uniqid() . '.' . $file->getClientOriginalExtension();
-    
-        //     // Simpan file ke storage/app/public/images
-        //     $storedPath = $file->storeAs('public/images', $filename);
-    
-        //     $path = 'images/' . $filename;
-    
-        //     Log::info('File stored at: ' . $storedPath);
-        // } else {
-        //     Log::info('No file uploaded.');
-        // }
 
         Post::create([
             'title' => $validated['title'],
@@ -59,8 +45,9 @@ class PostController extends Controller
         ]);
     
         
-        session()->flash('success', 'Post created successfully!');
+        // session()->flash('success', 'Post created successfully!');
 
-        return redirect()->route('posts.index');
+        // return redirect()->route('posts.index');
+        return redirect()->route('admin.dashboard')->with('success', 'Post created successfully!');
     }
 }

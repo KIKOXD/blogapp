@@ -1,0 +1,48 @@
+/* Sidebar */
+.sidebar {
+    background-color: #f5faff;
+    /* Warna biru soft */
+    height: 100vh;
+    border-right: 1px solid #d1e3f1;
+}
+
+.sidebar .nav-link {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: #0056b3;
+    /* Biru gelap untuk teks */
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #e3f2ff;
+    /* Biru lebih terang untuk hover */
+    color: #003d80;
+    /* Biru lebih gelap untuk teks hover */
+}
+
+.sidebar .nav-link.active {
+    background-color: #0056b3;
+    /* Biru solid untuk menu aktif */
+    color: #ffffff;
+    /* Teks putih */
+}
+
+.sidebar .btn-primary {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #0056b3;
+    /* Biru solid */
+    border: none;
+    color: #ffffff;
+    /* Teks putih */
+    transition: background-color 0.3s;
+}
+
+.sidebar .btn-primary:hover {
+    background-color: #004080;
+    /* Biru gelap untuk hover */
+}
