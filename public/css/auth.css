@@ -1,0 +1,46 @@
+/* auth.css */
+body {
+    background: linear-gradient(135deg, #3a3f51, #1e2538);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.9);
+    /* Transparan sedikit */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Bayangan lebih gelap */
+    width: 100%;
+    max-width: 400px;
+}
+
+
+.logo {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.btn-primary {
+    background-color: #4c51bf;
+    /* Biru gelap */
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #3a3fbd;
+    /* Biru lebih gelap untuk hover */
+}

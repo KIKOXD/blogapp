@@ -13,7 +13,12 @@ use Illuminate\Validation\Rules;
 use Illuminate\View\View;
 
 class RegisteredUserController extends Controller
-{
+{   
+    public function showRegistrationForm()
+    {
+        return view('auth.register');
+    }
+
     /**
      * Display the registration view.
      */

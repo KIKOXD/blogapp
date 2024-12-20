@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\RegisteredUserController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -18,5 +19,11 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
+
+// Route untuk halaman register
+Route::get('/register', [RegisteredUserController::class, 'showRegistrationForm'])->name('register');
+
+// Route untuk proses register
+Route::post('/register', [RegisteredUserController::class, 'store']);
 
 require __DIR__.'/auth.php';
