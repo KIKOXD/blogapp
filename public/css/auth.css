@@ -1,4 +1,3 @@
-/* auth.css */
 body {
     background: linear-gradient(135deg, #3a3f51, #1e2538);
     height: 100vh;
@@ -9,38 +8,69 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.login-container {
+.auth-container {
     background: rgba(255, 255, 255, 0.9);
-    /* Transparan sedikit */
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Bayangan lebih gelap */
     width: 100%;
     max-width: 400px;
+    text-align: center;
 }
-
 
 .logo {
     max-width: 200px;
     border-radius: 10px;
 }
 
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
 .form-control {
-    border-radius: 10px;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
     border: 1px solid #ccc;
-    padding: 10px;
+    border-radius: 5px;
 }
 
 .btn-primary {
     background-color: #4c51bf;
-    /* Biru gelap */
     border: none;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 0.75rem;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
 }
 
 .btn-primary:hover {
     background-color: #3a3fbd;
-    /* Biru lebih gelap untuk hover */
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.w-100 {
+    width: 100%;
 }
