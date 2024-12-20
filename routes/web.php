@@ -11,7 +11,7 @@ Route::get('/admin', [PostController::class, 'admin'])->name('posts.admin');
 Route::post('/admin/create', [PostController::class, 'store'])->name('posts.store');
 Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
 Route::post('/admin/posts', [PostController::class, 'store'])->name('admin.posts.store');
-Route::post('/admin/logo/upload', [AdminController::class, 'uploadLogo'])->name('admin.logo.upload');
+// Route::post('/admin/logo/upload', [AdminController::class, 'uploadLogo'])->name('admin.logo.upload');
 
 
 Route::get('/log-test', function () {

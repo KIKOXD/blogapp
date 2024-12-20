@@ -16,18 +16,9 @@
                 <div class="d-flex flex-column p-3">
                     <!-- Logo -->
                     <div class="mb-4 text-center">
-                        <img src="{{ asset('uploads/logos/' . 'my_logo.gif') }}" alt="Logo" class="img-fluid" style="width: 540px; height: 180px; object-fit: contain;">
+                        <!-- Path ke logo -->
+                        <img src="{{ asset('storage/uploads/logos/GIF-LOGO-MAHASLOT.gif') }}" alt="Logo" class="img-fluid" style="width: 540px; height: 180px; object-fit: contain;">
                     </div>
-
-                    <!-- Upload Logo Form -->
-                    <form action="{{ route('admin.logo.upload') }}" method="POST" enctype="multipart/form-data" class="mb-4">
-                        @csrf
-                        <div class="mb-3">
-                            <label for="logo" class="form-label">Upload New Logo</label>
-                            <input type="file" name="logo" id="logo" class="form-control" accept=".jpg,.png,.gif,.jpeg,.webp" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Upload Logo</button>
-                    </form>
 
                     <!-- Navigation Menu -->
                     <ul class="nav nav-pills flex-column mb-auto">
@@ -70,21 +61,5 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Preview uploaded logo before submission
-        const logoInput = document.getElementById('logo');
-        const logoPreview = document.getElementById('logo-preview');
-
-        logoInput.addEventListener('change', function() {
-            const file = this.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    logoPreview.src = e.target.result;
-                };
-                reader.readAsDataURL(file);
-            }
-        });
-    </script>
 </body>
 </html>
